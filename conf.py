@@ -1,6 +1,5 @@
 # Configuration file for the Sphinx documentation builder.
-# This file only contains a selection of the most common options.
-# For a full list see the documentation:
+# For a full list of options, see:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 import os
@@ -9,9 +8,8 @@ import sys
 # -- Path setup --------------------------------------------------------------
 
 # If extensions or modules to document with autodoc are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-# sys.path.insert(0, os.path.abspath('../src'))  # Adjust as needed
+# add these directories to sys.path here. Adjust the path as needed.
+# sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
 
@@ -29,32 +27,26 @@ html_favicon = 'favicon.ico'
 
 # Add any Sphinx extension module names here, as strings. 
 # These extensions are optional but useful for Read the Docs.
-
-html_theme_options = {
-    'show_powered_by': False,  # Disable "Powered by Sphinx"
-}
-html_theme_options = {
-
-# Add any paths that contain templates here, relative to this directory.
-# templates_path = ['_templates']
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
-# exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+extensions = []
 
 # -- Options for HTML output -------------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.
-# Use the Read the Docs theme for better compatibility with Read the Docs.
-# html_theme = 'sphinx_rtd_theme'
+# Use the Read the Docs theme for better compatibility
+html_theme = 'sphinx_rtd_theme'
 
-# Add any paths that contain custom static files (such as style sheets)
-# here, relative to this directory. These files are copied after the built-in
-# static files, so a file named "default.css" will overwrite the built-in one.
-# html_static_path = ['_static']
-html_show_sourcelink = False  # Hides the "View page source" link
-
+# Theme options
+html_theme_options = {
+    'show_powered_by': False,  # Disable "Powered by Sphinx"
     'collapse_navigation': False,
-    'navigation_depth': -1,  # No sidebar navigation
+    'navigation_depth': -1  # No sidebar navigation
 }
+
+# Hide the "View page source" link
+html_show_sourcelink = False  
+
+# Add paths that contain custom static files (such as style sheets)
+# These files are copied after the built-in static files.
+html_static_path = ['_static']
+
+# -- Optional: Paths to ignore during the build ------------------------------
+# exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
