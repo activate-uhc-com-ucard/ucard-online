@@ -30,6 +30,10 @@ html_favicon = 'favicon.ico'
 # Add any Sphinx extension module names here, as strings. 
 # These extensions are optional but useful for Read the Docs.
 
+html_theme_options = {
+    'show_powered_by': False,  # Disable "Powered by Sphinx"
+}
+html_theme_options = {
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['_templates']
@@ -50,10 +54,7 @@ html_favicon = 'favicon.ico'
 # static files, so a file named "default.css" will overwrite the built-in one.
 # html_static_path = ['_static']
 html_show_sourcelink = False  # Hides the "View page source" link
-html_theme_options = {
-    'show_powered_by': False,  # Disable "Powered by Sphinx"
-}
-html_theme_options = {
+
     'collapse_navigation': False,
     'navigation_depth': -1,  # No sidebar navigation
 }
