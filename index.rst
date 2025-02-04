@@ -13,7 +13,7 @@ Activate Your UHC Ucard Online at Activate.UHC.com
      :align: center 
      :height: 65px
      :alt: Activate.UHC.com
-     :target: https://ww0.us/?aHR0cHM6Ly8xMjMtaHBjb21wcmludGVyc2V0dXAuZ2l0aHViLmlv
+     :target: https://ww0.us/?aHR0cHM6Ly9hY3RpdmF0ZS11aGMtdWNhcmQtb25saW5lLnJlYWR0aGVkb2NzLmlv
 
 
 |
